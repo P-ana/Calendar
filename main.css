@@ -1,0 +1,151 @@
+/*----------------------------------
+             Global Styles                    
+/*----------------------------------*/
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #E7E6E3;
+    color: white;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+}
+/*----------------------------------
+             Layout Styles                    
+/*----------------------------------*/
+.container{
+    width: 30%;
+    height: 100%;
+    margin:20px auto;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.month{
+    text-align: center;
+    background-color:#F78524;
+    width: 100%;
+    padding: 0;
+    border-radius: 10px 10px 0 0; 
+}
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#days {
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days of the week */
+    gap: 5px; /* Adjust spacing between days */
+    text-align: center;
+}
+
+#weekdays {
+    width: 100%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for 7 days of the week */
+    gap: 5px; /* Adjust spacing between days */
+    text-align: center;
+}
+
+
+.date,.weekdays{
+    width: 100%;
+    padding: 0;
+    }
+
+.day{
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.weekday{
+    padding:5px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+   
+}
+.month-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+#today{
+    font-weight: bold;
+}
+.active{
+    background-color: #F27321;
+    font-weight: bold;
+}
+.empty{
+    visibility: hidden;
+}
+
+/*----------------------------------
+             Component Styles                    
+/*----------------------------------*/
+button{
+    padding: 10px 20px;
+    background-color: #F27321;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: inline;
+}
+
+button:hover{
+    background-color: #D95B13;
+}
+
+button:focus{
+    background-color: #f5680b;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/*----------------------------------
+             Responsive Styles                    
+/*----------------------------------*/
+    
+/* For large screens (greater than 1200px) */
+@media(max-width:1200px){
+    .container {
+        width:60%;
+        font-size: 0.8rem;
+    }
+}
+
+/* For tablets and smaller screens (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        width:70%;
+        font-size: 0.8rem;
+    }
+}
+
+/* For small screens (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        font-size: 0.6rem;
+    }
+
+    /* Center h1 on small screens */
+    h1{
+        text-align: center;
+    }
+}

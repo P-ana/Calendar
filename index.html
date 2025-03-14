@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!--Container-->
+    <div class="container">
+        <!--Month-->
+        <div class="month">
+            <div class="month-header">
+                <button id="prev" onclick="prevMonth()">&#8249;</button>
+                <h1 id="month"></h1>
+                <button id="next" onclick="nextMonth()">&#8250;</button>
+            </div>
+            <p id="today"></p> 
+        </div>
+        
+        
+        <!--Weekdays-->
+        <div class="weekdays">
+            <ul id="weekdays">
+                <li class="weekday ">Mo</li>
+                <li class="weekday ">Tu</li>
+                <li class="weekday ">We</li>
+                <li class="weekday  ">Th</li>
+                <li class="weekday ">Fr</li>
+                <li class="weekday  ">Sa</li>
+                <li class="weekday ">Su</li>
+            </ul>
+        </div>
+        <!--Dates-->
+        <div class="date">
+            <ul id="days">
+            </ul>
+        </div>
+    </div>
+    <!--Container END-->
+
+   <script src="index.js"></script> 
+</body>
+</html>
